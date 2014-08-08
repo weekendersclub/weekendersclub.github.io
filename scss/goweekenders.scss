@@ -38,6 +38,9 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 .m-h-xl{margin:0 50px}
 .tx-xs{font-size: 10px;}
 .tx-up{text-transform: uppercase;}
+.tx-c{text-align:center;}
+.tx-l{text-align:left;}
+.tx-r{text-align:right;}
 .overflow{overflow: hidden;}
 .clear{clear: both;}
 
@@ -53,3 +56,9 @@ body {
 	height: 100%;
 	width: 100%;
 }
+
+.container {
+	width: 600px;
+	margin: 0 auto;
+}
+
