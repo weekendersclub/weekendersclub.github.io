@@ -43,6 +43,8 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 .tx-r{text-align:right;}
 .overflow{overflow: hidden;}
 .clear{clear: both;}
+.list-inline{display:inline-block;zoom:1;*display:inline;}
+.list-unstyled{list-style-type:none;}
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Oswald', Helvetica, Arial; font-weight: 400; line-height: 1.3em; text-transform: uppercase; color: #000; }
 h1 { font-size: 43px; }
@@ -61,4 +63,18 @@ body {
 	width: 600px;
 	margin: 0 auto;
 }
+
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
