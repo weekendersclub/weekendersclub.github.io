@@ -2,7 +2,13 @@ jQuery(document).ready(function($) {
     $('#wcSlide').bjqs({
         'height' : ($(window).height()),
         'width' : ($(window).width()),
-        'responsive' : true
+        'responsive' : true,
+        'automatic' : true,
+        'animduration' : 450,
+        'animspeed' : 4000,
+        'nexttext' : '&rarr;',
+        'prevtext' : '&larr;',
+        'hoverpause' : false
     });
 });
 
@@ -13,5 +19,8 @@ $(document).ready(function() {
 	});
 });
 $(window).resize(function() {
-	$('#wcSplash').css('height', $(window).height());
+	$('#wcSlide').css({
+		'height' : ($(window).height()),
+		'width' : ($(window).width())
+	});
 });
