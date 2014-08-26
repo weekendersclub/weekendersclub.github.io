@@ -6,8 +6,8 @@ jQuery(document).ready(function($) {
         'automatic' : true,
         'animduration' : 450,
         'animspeed' : 4000,
-        'nexttext' : '&rarr;',
-        'prevtext' : '&larr;',
+        'nexttext' : '<span class="fa fa-chevron-right"></span>',
+        'prevtext' : '<span class="fa fa-chevron-left"></span>',
         'hoverpause' : false
     });
 });
