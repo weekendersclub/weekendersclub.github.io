@@ -8,7 +8,8 @@ jQuery(document).ready(function($) {
         'animspeed' : 6000,
         'nexttext' : '<span class="fa fa-chevron-right"></span>',
         'prevtext' : '<span class="fa fa-chevron-left"></span>',
-        'hoverpause' : false
+        'hoverpause' : false,
+        'showmarkers' : false
     });
 });
 
@@ -28,4 +29,12 @@ $(document).ready(function() {
 });
 $(window).resize(function() {
 	recalcSlider();
+});
+
+$(document).ready(function() {
+	$('.couch a').click(function(e) {
+		e.preventDefault();
+		$('.couchToggle').toggle();
+		$(this).toggleClass('couchOff');
+	});
 });

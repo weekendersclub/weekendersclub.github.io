@@ -59,6 +59,30 @@ body {
 
 #wcSplash {
 	position: relative;
+	&:hover {
+		.couch {
+			display: block;
+		}
+	}
+}
+
+.couch {
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	z-index: 3;
+	display: none;
+	a {
+		font-size: 20px;
+		opacity: .6;
+		color: #fff;
+		&:hover {
+			opacity: 1;
+		}
+		&.couchOff {
+			color: #333;
+		}
+	}
 }
 
 .wcHead {
@@ -73,6 +97,7 @@ body {
 	top: 50%;
 	h1 {
 		color: #fff;
+		font-size: 56px;
 	}
 }
 
