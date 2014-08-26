@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     $('#wcSlide').bjqs({
-        'height' : ($(window).height()),
+        'height' : ($(window).height()) - 50,
         'width' : ($(window).width()),
         'responsive' : true,
         'automatic' : true,
@@ -14,13 +14,13 @@ jQuery(document).ready(function($) {
 
 $(document).ready(function() {
 	$('#wcSplash').css({
-		'height' : ($(window).height()),
+		'height' : ($(window).height()) - 50,
 		'width' : ($(window).width())
 	});
 });
 $(window).resize(function() {
-	$('#wcSlide').css({
-		'height' : ($(window).height()),
+	$('#wcSplash').css({
+		'height' : ($(window).height()) - 50,
 		'width' : ($(window).width())
 	});
 });
