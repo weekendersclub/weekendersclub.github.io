@@ -1,7 +1,7 @@
-jQuery(document).ready(function($) {
+$(window).load(function() {
     $('#wcSlide').bjqs({
-        'height' : ($(window).height()) - 50,
-        'width' : ($(window).width()),
+        'height' : $(window).height() - 50,
+        'width' : $(window).width(),
         'responsive' : true,
         'automatic' : true,
         'animduration' : 450,
@@ -9,18 +9,19 @@ jQuery(document).ready(function($) {
         'nexttext' : '<span class="fa fa-chevron-right"></span>',
         'prevtext' : '<span class="fa fa-chevron-left"></span>',
         'hoverpause' : false,
-        'showmarkers' : false
+        'showmarkers' : false,
+        'randomstart' : true
     });
 });
 
 function recalcSlider() {
 	$('#wcSplash').css({
-		'height' : ($(window).height()) - 50,
-		'width' : ($(window).width())
+		'height' : $(window).height() - 50,
+		'width' : $(window).width() - 15
 	});
 	$('#wcSlide').css({
-		'height' : ($(window).height()) - 50,
-		'width' : ($(window).width())
+		'height' : $(window).height() - 50,
+		'width' : $(window).width()
 	});
 }
 
