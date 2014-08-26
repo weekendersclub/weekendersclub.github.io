@@ -17,7 +17,7 @@ $(window).load(function() {
 function recalcSlider() {
 	$('#wcSplash').css({
 		'height' : $(window).height() - 50,
-		'width' : $(window).width() - 15
+		'width' : $(window).width()
 	});
 	$('#wcSlide').css({
 		'height' : $(window).height() - 50,
@@ -25,11 +25,12 @@ function recalcSlider() {
 	});
 }
 
-$(document).ready(function() {
+$(window).load(function() {
 	recalcSlider();
 });
 $(window).resize(function() {
 	recalcSlider();
+	$('#wcSlide').css('max-width', $(window).width());
 });
 
 $(document).ready(function() {

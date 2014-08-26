@@ -53,12 +53,13 @@ h3 { font-size: 28px; }
 h4 { font-size: 24px; }
 
 body {
-	font: 300 normal 13px/1.3em 'Lato', Helvetica, Arial;
-	color: #444;
+	font-family:'Lato', Helvetica, Arial;
+	color: #333;
 }
 
 #wcSplash {
 	position: relative;
+	overflow: hidden;
 	&:hover {
 		.couch {
 			display: block;
@@ -181,3 +182,10 @@ ol.bjqs-markers li{display:inline;}
 ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
+@media (max-width: 889px) and (min-width: 0) {
+	.wcHead {
+		h1 {
+			font-size: inherit;
+		}
+	}
+}
