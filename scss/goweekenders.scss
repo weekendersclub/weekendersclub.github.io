@@ -183,9 +183,15 @@ ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
 @media (max-width: 889px) and (min-width: 0) {
+	#wcSlide {
+		li {
+		}
+	}
 	.wcHead {
+		top: 0;
+		margin-top: 150px;
 		h1 {
-			font-size: inherit;
+			font-size: 34px;
 		}
 	}
 }
