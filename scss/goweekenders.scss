@@ -116,7 +116,7 @@ body {
 }
 
 .wcWrapper {
-	padding: 80px 0 30px;
+	padding: 80px 0 50px;
 	background-repeat: repeat-y;
 	background-position: top center;
 	background-color: #fff;
@@ -125,12 +125,16 @@ body {
 		border-style: solid;
 		background-color: #fff;
 		padding: 15px;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 	&.wcCurrent {
 		background-image: url('../images/wccurrent.png');
 		.wcCard {
-			border-color: #339966;
+			border-color: #7DC6AB;
+			&.happening {
+				border-color: #339966;
+				@include box-shadow(0,0,10px,rgba(0,0,0,0.1));
+			}
 		}
 		.wcMonth {
 			background-color: #339966;
