@@ -37,15 +37,14 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 .m-h-md{margin:0 15px}
 .m-h-lg{margin:0 30px}
 .m-h-xl{margin:0 50px}
-.tx-xs{font-size: 10px;}
-.tx-up{text-transform: uppercase;}
 .tx-c{text-align:center;}
 .tx-l{text-align:left;}
 .tx-r{text-align:right;}
-.overflow{overflow: hidden;}
-.clear{clear: both;}
-.list-inline{display:inline-block;zoom:1;*display:inline;}
-.list-unstyled{list-style-type:none;}
+.tx-xs{font-size: 10px;}
+.tx-up{text-transform:uppercase;}
+.tx-lo{text-transform:lowercase;}
+.overflow{overflow:hidden;}
+.clear{clear:both;}
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Oswald', Helvetica, Arial; font-weight: 400; line-height: 1.3em; text-transform: uppercase; color: #000; }
 h1 { font-size: 43px; }
@@ -117,16 +116,46 @@ body {
 }
 
 .wcWrapper {
+	padding: 80px 0 30px;
+	background-repeat: repeat-y;
+	background-position: top center;
+	background-color: #fff;
 	.wcCard {
 		border-width: 1px;
 		border-style: solid;
-		@include rounded(3px);
+		background-color: #fff;
+		padding: 15px;
+		margin-bottom: 50px;
 	}
 	&.wcCurrent {
-
+		background-image: url('../images/wccurrent.png');
+		.wcCard {
+			border-color: #339966;
+		}
+		.wcMonth {
+			background-color: #339966;
+		}
 	}
 	&.wcPast {
-
+		background-image: url('../images/wcpast.png');
+		margin-bottom: 50px;
+		color: #888;
+		.wcCard {
+			border-color: #ccc;
+		}
+		.wcMonth {
+			background-color: #999;
+			padding: 5px 15px;
+			font-weight: 300;
+			letter-spacing: 2px;
+		}
+	}
+	.wcMonth {
+		color: #fff;
+		display: inline-block;
+		padding: 10px 25px 9px;
+		letter-spacing: 3px;
+		@include rounded(3px);
 	}
 }
 
